@@ -1,0 +1,92 @@
+* {
+    margin  : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+body {
+    background: #24272e;
+}
+
+header {
+    background: white;
+    padding : 5px;
+
+}
+header > h1 {
+    color : #24272e;
+    text-align: center;
+    font-family:  sans-serif;
+}
+
+.score-board {
+    margin : 20px auto;
+    border : 3px solid white;
+    width : 200px; 
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    text-align: center;
+    position : relative; /*given for making user and computer label to appear on top*/
+    padding : 15px 20px; 
+}
+
+.badge {
+    background:  red;
+    padding: 2px 10px;
+    font-size: 14px;;
+}
+#user-label{
+    position:  absolute;
+    top : 20px;
+    left : -25px;
+}
+#computer-label{
+    position: absolute;
+    top : 20px;
+    right : -35px;/* will start from right hand side*/
+}
+
+
+.result {
+    color:  white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.choices {
+    text-align: center;
+    margin-top : 40px;
+}
+.choice {
+    border : 4px solid white;
+    display: inline-block;
+    border-radius: 5%;
+    margin : 0px 15px;
+    transition: all 0.3s ease;
+}
+
+.choice:hover{
+    cursor: pointer;
+    border: 2px solid gold ;
+    background: gold;
+}
+
+#action-message {                      
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.green-glow {
+    border : 4px solid green;
+    box-shadow:  0 0 10px #31b43a;
+}
+.red-glow {
+    border : 4px solid #fc121b;
+    box-shadow:  0 0 10px #d01115;
+}
+.blue-glow {
+    border : 4px solid blue;
+    box-shadow:  0 0 10px #6b73ea;
+}
